@@ -1,0 +1,21 @@
+{
+  "name": "arsalan-sqa-assessment",
+  "version": "1.0.0",
+  "description": "SoftAims Senior SQA Engineer technical assessment — Restful-Booker test automation",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test tests/api",
+    "test:ui": "playwright test tests/ui",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.0",
+    "dotenv": "^17.4.2",
+    "typescript": "^7.0.2"
+  }
+}
